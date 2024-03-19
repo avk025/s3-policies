@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1710823292381",
+    "Statement": [
+        {
+            "Sid": "Stmt1710823289309",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::static-web-host-025/*",
+            "Condition": {
+                "IpAddress": {
+                    "aws:SourceIp": "103.160.26.180"
+                }
+            }
+        }
+    ]
+}
